@@ -4,7 +4,7 @@
 
 ### Website
 
-<img src="screenshot.png" alt="Screenshot" style="border-radius: 5px;">
+![Image Cropper Website Screenshot](screenshot.png)
 
 ### Folder Structure
 
