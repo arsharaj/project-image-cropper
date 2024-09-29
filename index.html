@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Image Cropper</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cut out the clutter">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/cropper.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center my-3 py-2">🌱 Image Cropper 🌿</h1>
+        <div class="input-group mb-3">
+            <input type="file" name="image" id="image" class="form-control">
+        </div>
+        <div class="row g-3">
+            <div class="col-sm-6">
+                <div id="image-preview" class="d-none">
+                    <h5 class="text-center py-2 m-0">Selected Image Preview</h5>
+                    <img id="selected-image" src="#" alt="Preview" class="img-fluid w-100">
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div id="cropped-preview" class="d-none">
+                    <h5 class="text-center py-2 m-0">Cropped Image Preview</h5>
+                    <img id="cropped-image" src="#" alt="Cropped Image" class="img-fluid w-100">
+                </div>
+            </div>
+        </div>
+        <div class="d-grid gap-2 my-3">
+            <button id="crop-button" class="btn btn-primary d-none">Crop Image</button>
+            <button id="save-button" class="btn btn-success d-none">Save Profile Image &nbsp; <span id="spinner" class="spinner-border spinner-border-sm d-none"></span></button>
+            <button id="download-button" class="btn btn-info d-none">Download Cropped Image</button>
+            <a href="." id="reset-button" class="btn btn-secondary d-none">Reset</a>
+        </div>
+        <div id="upload-success" class="alert alert-success py-2 d-none">
+            <div class="alert-heading fs-5">URL : <a href="#" id="upload-url" class="text-decoration-none" target="_blank">View Uploaded Image</a></div>
+            ✅ Your image has been uploaded successfully. Please download the image within 24 hours.
+        </div>
+        <div id="upload-error" class="alert alert-danger py-2 d-none">
+            ❌ An error occurred while uploading your image. Please try again later.
+        </div>
+    </div>
+    <script src="./scripts/bootstrap.min.js"></script>
+    <script src="./scripts/cropper.min.js"></script>
+    <script src="./scripts/jquery.js"></script>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+body {
+    background-image: radial-gradient(circle, #777 10%, transparent 10%);
+    background-size: 11px 11px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    background-color: #fff;
+}
+
+#image-preview,
+#cropped-preview {
+    max-height: 400px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
