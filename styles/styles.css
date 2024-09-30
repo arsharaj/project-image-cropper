@@ -14,7 +14,6 @@ h6 {
 
 #image-preview,
 #cropped-preview {
-    max-height: 400px;
     overflow: hidden;
     border: 1px solid #ccc;
     border-radius: 5px;
