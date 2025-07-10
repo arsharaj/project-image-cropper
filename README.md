@@ -16,4 +16,4 @@ root
 
 ### License
 
-[MIT License](license)
+[MIT License](LICENSE)
